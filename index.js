@@ -3,27 +3,27 @@
 (function () {
     const IFRAMES = {
         'videopress': {
-            openTag: (videoId) => '</p><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.2493%;"><iframe src="https://videopress.com/embed/' + videoId + '" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no">',
+            openTag: (videoId) => '</p><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.2493%;"><iframe src="https://videopress.com/embed/' + videoId + '" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen="" scrolling="no">',
             closeTag: () => '</iframe></div><p>'
         },
         'vimeo': {
-            openTag: (videoId) => '</p><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.2493%;"><iframe src="https://player.vimeo.com/video/' + videoId + '?byline=0&amp;badge=0&amp;portrait=0&amp;title=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no">',
+            openTag: (videoId) => '</p><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.2493%;"><iframe src="https://player.vimeo.com/video/' + videoId + '?byline=0&amp;badge=0&amp;portrait=0&amp;title=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen="" scrolling="no">',
             closeTag: () => '</iframe></div><p>'
         },
         'vine': {
-            openTag: (videoId) => '</p><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 100%;"><iframe src="https://vine.co/v/' + videoId + '/embed/simple" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen>',
+            openTag: (videoId) => '</p><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 100%;"><iframe src="https://vine.co/v/' + videoId + '/embed/simple" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen="">',
             closeTag: () => '</iframe></div><p>'
         },
         'wistia': {
-            openTag: (videoId) => '</p><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.2493%;"><iframe src="https://fast.wistia.net/embed/iframe/' + videoId + '" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="autoplay; encrypted-media">',
+            openTag: (videoId) => '</p><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.2493%;"><iframe src="https://fast.wistia.net/embed/iframe/' + videoId + '" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen="" scrolling="no" allow="autoplay; encrypted-media">',
             closeTag: () => '</iframe></div><p>'
         },
         'youtube': {
-            openTag: (videoId) => '</p><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.2493%;"><iframe src="https://www.youtube.com/embed/' + videoId + '?rel=0&amp;showinfo=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="autoplay; encrypted-media">',
+            openTag: (videoId) => '</p><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.2493%;"><iframe src="https://www.youtube.com/embed/' + videoId + '?rel=0&amp;showinfo=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen="" scrolling="no" allow="autoplay; encrypted-media">',
             closeTag: () => '</iframe></div><p>'
         },
         'youtube-playlist': {
-            openTag: (playlistId) => '</p><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.2493%;"><iframe src="https://www.youtube.com/embed/videoseries?list=' + playlistId + '" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="autoplay; encrypted-media">',
+            openTag: (playlistId) => '</p><div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.2493%;"><iframe src="https://www.youtube.com/embed/videoseries?list=' + playlistId + '" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen="" scrolling="no" allow="autoplay; encrypted-media">',
             closeTag: () => '</iframe></div><p>'
         }
     };
